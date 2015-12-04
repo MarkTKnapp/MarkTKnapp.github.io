@@ -1,4 +1,9 @@
 * {
 	font-family: "Verdana", "Arial", sans-serif;
-	color: #eee;
+	color: #111;
+}
+body {
+	padding: 0px auto;
+	width: 75%;
+	background-color: #111;
 }
