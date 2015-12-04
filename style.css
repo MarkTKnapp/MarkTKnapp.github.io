@@ -2,8 +2,8 @@
 	font-family: "Verdana", "Arial", sans-serif;
 	color: #111;
 }
-body {
+main {
 	padding: 0px auto;
 	width: 75%;
-	background-color: #111;
+	background-color: #eee;
 }
