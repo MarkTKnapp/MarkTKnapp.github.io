@@ -1,9 +1,11 @@
 * {
 	font-family: "Verdana", "Arial", sans-serif;
 	color: #111;
+	margin: 0;
 }
 main {
 	margin: 0px auto;
+	padding: 10px 5px;
 	width: 75%;
 	background-color: #eee;
 }
