@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans:300|Pacifico|Handlee');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    overflow:hidden;
+}
+
+.slide {
+	height: 100vh;
+	width: 100vw;
+}
+
+#greeting {
+	font-family: 'Pacifico', cursive;
+	background-color: #ebccff;
+	color: white;
+	text-align: center;
+}
+
+#greeting h1{
+	font-size: 7vw;
+}
+
+#instructions {
+	display: inline-block;
+	text-align: left;
+	margin-top: 15vh;
+	font-size: calc(2vh + 2vw);
+}
+
+#greeting svg {
+	position: absolute;
+	left: 100;
+	/*transform: rotate(30deg);*/
+}
+
+#balloon1 {
+	left: 40px;
+	top: 60px;
+	transform: rotate(10deg);
+}
+#balloon2 {
+	top: 30px;
+	left: 10px;
+	transform: rotate(-10deg);
+}
+#balloon3 {
+	left: 40px;
+}
+
+.balloon {
+	position: absolute;
+	width: 100px;
+}
+
+#balloons {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+
+#second {
+	width: 100vw;
+	height: 100vh;
+	background-color: lightblue;
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	text-align: center;
+	font-size: 10vw;
+}
+#second p{
+	font-size: 2vw;
+}
+#second p:nth-child(3) {
+    font-size: 4vw;
+}
+
+#third {
+	font-family: 'Handlee';
+	font-size: 3vw;
+	opacity: 1.0;
+	padding: 60px;
+    overflow:hidden;
+    position: relative;
+}
+
+#third img{
+	z-index: -2;
+}
+
+.bgimage {
+	/*opacity: 0.5;*/
+	filter: opacity(50%);
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: auto;
+	z-index: 1;
+}
+
+.fillWidth {
+	width: 100vw;
+	height: auto;
+}
+
+.fillHeight {
+	width: auto;
+	height: 100vh;
+}
+
+#fourth {
+	position: relative;
+	background-color: white;
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	font-size: 4vw;
+	z-index: 2;
+}
+
+#fifth {
+	padding-top: 100px;
+	position: relative;
+	background-color: white;
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	font-size: 3vw;
+	z-index: 3;
+}
+
+#sixth {
+	padding-top: 100px;
+	position: relative;
+	background-color: white;
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	font-size: 5vw;
+	z-index: 4;
+}
+
+#sixth img{
+	filter: opacity(70%);
+}
+
+#sixth p{
+	z-index: 5;
+}
