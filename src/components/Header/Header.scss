@@ -1,0 +1,79 @@
+#header {
+	width: 100%;
+	height: 60px;
+	font-size: 40px;
+	font-family: "Open Sans Condensed";
+	font-weight: 700;
+	position: absolute;
+	background-color: white;
+}
+
+ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+
+	&::after {
+		content: "";
+		height: 1px;
+		width: 50%;
+		background-color: #ddd;
+		position: absolute;
+		bottom: 2px;
+		left: 25%;
+	}
+}
+
+li {
+	display: inline-block;
+	transition: margin 0.2s ease-in-out;
+
+	margin: 0 50px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+	
+	// When viewport is small enough, remove the margins so that it doesn't switch to two lines
+	@media screen and (max-width: 900px) {
+		margin: 0;
+	}
+
+	a {
+		position: relative;
+		text-decoration: none;
+		color: #333;
+		transition: 1s ease-in-out;
+		transition: font-size 0.05s ease-in-out;
+		padding: 0 20px;
+
+		// When the viewport shrinks even smaller reduce the font size
+		@media screen and (max-width: 600px) {
+			font-size: 32px;
+		}
+
+		&::after{
+			-webkit-transition: 0.2s ease-in-out;
+			content: '';
+			height: 2px;
+			width: 0;
+			background-color: #333;
+			position: absolute;
+			bottom: -2px;
+			left: 50%;
+		}
+
+		&:hover::after{
+			width: 80%;
+			left: 10%;
+		}
+	}
+}
+
+hr{
+	margin: 0;
+}
