@@ -5,7 +5,13 @@
 	vertical-align:top;
 
 	@media screen and (max-width: 1050px) {
-		width: 500px;
+		width: 700px;
+		display: block;
+		margin: 20px auto;
+	}
+
+	@media screen and (max-width: 700px) {
+		width: 100%;
 		display: block;
 		margin: 20px auto;
 	}
@@ -18,10 +24,10 @@
 .snippetTitle {
 	padding: 0;
 	margin: 0 0 -10px 0;
-	font-size: 20px;
+	font-size: 32px;
 	font-family: "Open Sans";
 	text-align: left;
-	font-weight: 700;
+	font-weight: 300;
 }
 
 .snippetContent {
@@ -29,4 +35,6 @@
 	margin: 0;
 	text-align: left;
 	text-indent: 20px;
+	font-size: 20px;
+	font-weight: 300;
 }
